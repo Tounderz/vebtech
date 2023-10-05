@@ -1,0 +1,933 @@
+2023-10-06 01:38:36.603 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 01:38:36.811 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 01:38:36.812 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 01:38:36.819 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 01:38:36.821 +03:00  INF  Hosting environment: Development
+2023-10-06 01:38:36.822 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 01:38:37.161 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:38:37.507 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 350.2710ms
+2023-10-06 01:38:37.598 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:38:37.597 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:38:37.602 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.7890ms
+2023-10-06 01:38:37.612 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9318ms
+2023-10-06 01:38:37.805 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:38:37.923 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.6469ms
+2023-10-06 01:40:49.894 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:40:49.907 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 13.2493ms
+2023-10-06 01:40:49.991 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:40:49.993 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 2.0391ms
+2023-10-06 01:40:49.998 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:40:50.002 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.9463ms
+2023-10-06 01:40:50.132 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:40:50.141 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.2206ms
+2023-10-06 01:42:18.114 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:42:18.129 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 14.1642ms
+2023-10-06 01:42:18.213 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:42:18.213 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:42:18.217 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.9012ms
+2023-10-06 01:42:18.224 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.6960ms
+2023-10-06 01:42:18.563 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:42:18.574 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.3387ms
+2023-10-06 01:42:22.707 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:42:22.720 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 13.4986ms
+2023-10-06 01:42:22.814 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:42:22.815 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:42:22.820 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 5.1861ms
+2023-10-06 01:42:22.821 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.0754ms
+2023-10-06 01:42:22.987 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:42:22.994 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.1124ms
+2023-10-06 01:57:25.502 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 01:57:25.681 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 01:57:25.683 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 01:57:25.688 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 01:57:25.689 +03:00  INF  Hosting environment: Development
+2023-10-06 01:57:25.691 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 01:57:25.848 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:57:26.211 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 366.3512ms
+2023-10-06 01:57:26.419 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:57:26.419 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:57:26.438 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 19.1563ms
+2023-10-06 01:57:26.467 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.6409ms
+2023-10-06 01:57:26.758 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:57:26.883 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 125.6960ms
+2023-10-06 01:57:38.025 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0
+2023-10-06 01:57:38.069 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:38.112 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 01:57:39.607 +03:00  INF  Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:57:39.661 +03:00  INF  Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:57:39.691 +03:00  ERR  im working log
+2023-10-06 01:57:40.077 +03:00  INF  Executed DbCommand (30ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 01:57:40.241 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 01:57:40.346 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 2222.7134ms
+2023-10-06 01:57:40.348 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:40.361 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0 - 200 318 application/json;+charset=utf-8 2335.5943ms
+2023-10-06 01:57:44.093 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=qwe&password=test - 0
+2023-10-06 01:57:44.096 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:44.098 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 01:57:44.110 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:57:44.118 +03:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:57:44.126 +03:00  ERR  im working log
+2023-10-06 01:57:44.131 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 01:57:44.140 +03:00  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 01:57:44.145 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 39.9507ms
+2023-10-06 01:57:44.147 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:44.153 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=qwe&password=test - 0 - 400 45 application/json;+charset=utf-8 60.0370ms
+2023-10-06 01:57:48.893 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0
+2023-10-06 01:57:48.899 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:48.902 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 01:57:48.992 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:57:49.000 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:57:49.010 +03:00  ERR  im working log
+2023-10-06 01:57:49.014 +03:00  INF  Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 01:57:49.023 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 01:57:49.026 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 118.2555ms
+2023-10-06 01:57:49.028 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:57:49.032 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0 - 200 318 application/json;+charset=utf-8 138.0841ms
+2023-10-06 01:58:02.777 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/user/235235 - -
+2023-10-06 01:58:02.872 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:58:02.876 +03:00  INF  Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature vebtech.Models.User GetUser(Int32) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 01:58:02.884 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:58:02.893 +03:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:58:02.922 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 01:58:02.932 +03:00  INF  Executed action vebtech.Controllers.UserController.GetUser (vebtech) in 50.9377ms
+2023-10-06 01:58:02.935 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:58:02.942 +03:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at lambda_method44(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at vebtech.Repositories.Impl.UserRepository.GetUser(Int32 id) in C:\Users\basta\source\repos\vebtech\vebtech\Repositories\Impl\UserRepository.cs:line 56
+   at vebtech.Controllers.UserController.GetUser(Int32 id) in C:\Users\basta\source\repos\vebtech\vebtech\Controllers\UserController.cs:line 55
+   at lambda_method41(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-10-06 01:58:03.030 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/user/235235 - - - 500 - text/plain;+charset=utf-8 252.6767ms
+2023-10-06 01:59:03.006 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:59:03.030 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 22.9789ms
+2023-10-06 01:59:03.146 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:59:03.147 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:59:03.151 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.8630ms
+2023-10-06 01:59:03.155 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.6293ms
+2023-10-06 01:59:03.450 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:59:03.461 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.3130ms
+2023-10-06 01:59:10.392 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 01:59:10.631 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 01:59:10.632 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 01:59:10.638 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 01:59:10.640 +03:00  INF  Hosting environment: Development
+2023-10-06 01:59:10.641 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 01:59:10.922 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 01:59:11.273 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 355.4193ms
+2023-10-06 01:59:11.313 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 01:59:11.313 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 01:59:11.318 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 4.4150ms
+2023-10-06 01:59:11.326 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.2891ms
+2023-10-06 01:59:11.418 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 01:59:11.533 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.6772ms
+2023-10-06 01:59:19.775 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0
+2023-10-06 01:59:19.816 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:59:19.857 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 01:59:21.335 +03:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:59:21.385 +03:00  INF  Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:59:21.412 +03:00  ERR  im working log
+2023-10-06 01:59:21.819 +03:00  INF  Executed DbCommand (31ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 01:59:21.992 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 01:59:22.101 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 2232.3206ms
+2023-10-06 01:59:22.103 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 01:59:22.114 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0 - 200 318 application/json;+charset=utf-8 2339.0324ms
+2023-10-06 01:59:34.689 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/user/235235 - -
+2023-10-06 01:59:34.779 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:59:34.784 +03:00  INF  Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature vebtech.Models.User GetUser(Int32) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 01:59:34.796 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:59:34.804 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:59:34.830 +03:00  INF  Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 01:59:34.837 +03:00  INF  Executing ObjectResult, writing value of type 'System.String'.
+2023-10-06 01:59:34.840 +03:00  INF  Executed action vebtech.Controllers.UserController.GetUser (vebtech) in 51.0869ms
+2023-10-06 01:59:34.842 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:59:34.845 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/user/235235 - - - 404 - text/plain;+charset=utf-8 156.5412ms
+2023-10-06 01:59:37.847 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/user/235235 - -
+2023-10-06 01:59:37.854 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:59:37.856 +03:00  INF  Route matched with {action = "GetUser", controller = "User"}. Executing controller action with signature vebtech.Models.User GetUser(Int32) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 01:59:37.935 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 01:59:37.942 +03:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 01:59:37.953 +03:00  INF  Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 01:59:37.958 +03:00  INF  Executing ObjectResult, writing value of type 'System.String'.
+2023-10-06 01:59:37.961 +03:00  INF  Executed action vebtech.Controllers.UserController.GetUser (vebtech) in 100.7111ms
+2023-10-06 01:59:37.963 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.GetUser (vebtech)'
+2023-10-06 01:59:37.965 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/user/235235 - - - 404 - text/plain;+charset=utf-8 118.3859ms
+2023-10-06 02:00:30.152 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 02:00:30.352 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 02:00:30.354 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 02:00:30.359 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 02:00:30.360 +03:00  INF  Hosting environment: Development
+2023-10-06 02:00:30.362 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 02:00:30.752 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:00:31.123 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 375.3033ms
+2023-10-06 02:00:31.157 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:00:31.157 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:00:31.162 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 4.9068ms
+2023-10-06 02:00:31.171 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.7369ms
+2023-10-06 02:00:31.437 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:00:31.556 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.5440ms
+2023-10-06 02:00:48.877 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:00:48.897 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 19.3167ms
+2023-10-06 02:00:49.056 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:00:49.057 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:00:49.060 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.2423ms
+2023-10-06 02:00:49.063 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.3700ms
+2023-10-06 02:00:49.311 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:00:49.330 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 17.3099ms
+2023-10-06 02:01:42.858 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=qwe&password=qwe - 0
+2023-10-06 02:01:42.895 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:01:42.936 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 02:01:44.384 +03:00  INF  Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:01:44.431 +03:00  INF  Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:01:44.454 +03:00  ERR  im working log
+2023-10-06 02:01:44.824 +03:00  INF  Executed DbCommand (28ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 02:01:44.841 +03:00  INF  Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 02:01:44.946 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 1998.4222ms
+2023-10-06 02:01:44.949 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:01:44.961 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=qwe&password=qwe - 0 - 400 45 application/json;+charset=utf-8 2103.5978ms
+2023-10-06 02:03:33.315 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:03:33.332 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 16.0509ms
+2023-10-06 02:03:33.422 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:03:33.426 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.7980ms
+2023-10-06 02:03:33.453 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:03:33.455 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 2.1221ms
+2023-10-06 02:03:33.713 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:03:33.718 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.1288ms
+2023-10-06 02:03:51.046 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:03:51.065 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 19.0707ms
+2023-10-06 02:03:51.181 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:03:51.181 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:03:51.184 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.4102ms
+2023-10-06 02:03:51.188 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.2988ms
+2023-10-06 02:03:51.358 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:03:51.365 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.8759ms
+2023-10-06 02:04:02.133 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:04:02.144 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 11.1502ms
+2023-10-06 02:04:02.261 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:04:02.262 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:04:02.265 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 2.9902ms
+2023-10-06 02:04:02.265 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.9299ms
+2023-10-06 02:04:02.455 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:04:02.461 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.9613ms
+2023-10-06 02:04:04.280 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:04:04.291 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 11.2156ms
+2023-10-06 02:04:04.364 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:04:04.365 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:04:04.368 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.3469ms
+2023-10-06 02:04:04.369 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.3381ms
+2023-10-06 02:04:04.468 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:04:04.473 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.8159ms
+2023-10-06 02:04:19.035 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 02:04:19.221 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 02:04:19.224 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 02:04:19.234 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 02:04:19.236 +03:00  INF  Hosting environment: Development
+2023-10-06 02:04:19.238 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 02:04:19.564 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:04:19.949 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 389.8210ms
+2023-10-06 02:04:20.028 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:04:20.028 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:04:20.032 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 3.9625ms
+2023-10-06 02:04:20.040 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.9058ms
+2023-10-06 02:04:20.200 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:04:20.308 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.5107ms
+2023-10-06 02:04:53.235 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:04:53.256 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 20.9062ms
+2023-10-06 02:04:53.355 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:04:53.355 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:04:53.358 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 2.8164ms
+2023-10-06 02:04:53.361 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.4615ms
+2023-10-06 02:04:53.583 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:04:53.593 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.7982ms
+2023-10-06 02:05:03.401 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/singup?email=qwe - 0
+2023-10-06 02:05:03.436 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signup (vebtech)'
+2023-10-06 02:05:03.474 +03:00  INF  Route matched with {action = "Signup", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signup(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 02:05:04.846 +03:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:05:04.895 +03:00  INF  Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:05:04.927 +03:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-10-06 02:05:05.052 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signup (vebtech) in 1563.633ms
+2023-10-06 02:05:05.054 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signup (vebtech)'
+2023-10-06 02:05:05.065 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/singup?email=qwe - 0 - 400 249 application/problem+json;+charset=utf-8 1664.5602ms
+2023-10-06 02:08:40.272 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 02:08:40.451 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 02:08:40.453 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 02:08:40.458 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 02:08:40.460 +03:00  INF  Hosting environment: Development
+2023-10-06 02:08:40.461 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 02:08:40.783 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:08:41.157 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 378.3201ms
+2023-10-06 02:08:41.223 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:08:41.225 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:08:41.228 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 5.3846ms
+2023-10-06 02:08:41.238 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.8947ms
+2023-10-06 02:08:41.500 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:08:41.621 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.3960ms
+2023-10-06 02:08:48.924 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0
+2023-10-06 02:08:48.968 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:08:49.007 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 02:08:50.623 +03:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:08:50.670 +03:00  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:08:51.091 +03:00  INF  Executed DbCommand (35ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 02:08:51.257 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 02:08:51.369 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 2350.7372ms
+2023-10-06 02:08:51.371 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:08:51.383 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0 - 200 318 application/json;+charset=utf-8 2458.7826ms
+2023-10-06 02:09:03.905 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/user - -
+2023-10-06 02:09:04.002 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.Get (vebtech)'
+2023-10-06 02:09:04.007 +03:00  INF  Route matched with {action = "Get", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(vebtech.DTO.PaginationParameters, vebtech.DTO.SortParameters) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:09:04.019 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:09:04.028 +03:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:09:04.046 +03:00  INF  Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[vebtech.Models.User, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:09:04.064 +03:00  WRN  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-10-06 02:09:04.066 +03:00  WRN  The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-10-06 02:09:04.109 +03:00  INF  Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-10-06 02:09:04.138 +03:00  INF  Executed action vebtech.Controllers.UserController.Get (vebtech) in 124.0618ms
+2023-10-06 02:09:04.141 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.Get (vebtech)'
+2023-10-06 02:09:04.147 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/user - - - 200 2 application/json;+charset=utf-8 242.1047ms
+2023-10-06 02:09:09.726 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/user application/json-patch+json 56
+2023-10-06 02:09:09.731 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.Create (vebtech)'
+2023-10-06 02:09:09.735 +03:00  INF  Route matched with {action = "Create", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(vebtech.DTO.UserDTO) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:09:09.812 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:09:09.819 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:09:09.898 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0
+2023-10-06 02:09:10.082 +03:00  INF  Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Age], [Email], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2023-10-06 02:09:10.118 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[vebtech.Models.User, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:09:10.129 +03:00  INF  Executed action vebtech.Controllers.UserController.Create (vebtech) in 389.783ms
+2023-10-06 02:09:10.131 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.Create (vebtech)'
+2023-10-06 02:09:10.133 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/user application/json-patch+json 56 - 200 72 application/json;+charset=utf-8 407.2231ms
+2023-10-06 02:09:16.289 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/user/1/role?roleName=test - 0
+2023-10-06 02:09:16.293 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:09:16.297 +03:00  INF  Route matched with {action = "CreateRole", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateRole(Int32, System.String) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:09:16.305 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:09:16.311 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:09:16.326 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 02:09:16.372 +03:00  INF  Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2023-10-06 02:09:16.380 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[vebtech.Models.Role, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:09:16.394 +03:00  INF  Executed action vebtech.Controllers.UserController.CreateRole (vebtech) in 92.6093ms
+2023-10-06 02:09:16.396 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:09:16.398 +03:00  ERR  An unhandled exception has occurred while executing the request.Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'vebtech.Models.Role'. Path 'role.User.Roles'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-10-06 02:09:16.443 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/user/1/role?roleName=test - 0 - 500 - text/plain;+charset=utf-8 154.0448ms
+2023-10-06 02:09:47.537 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:09:47.553 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 15.9075ms
+2023-10-06 02:09:47.718 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:09:47.718 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:09:47.723 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.3187ms
+2023-10-06 02:09:47.725 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 6.4167ms
+2023-10-06 02:09:48.066 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:09:48.078 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.0410ms
+2023-10-06 02:09:57.253 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8
+2023-10-06 02:09:57.256 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:09:57.260 +03:00  INF  Route matched with {action = "CreateRole", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateRole(Int32, System.String) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:09:57.268 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:09:57.291 +03:00  INF  Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:09:57.305 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 02:09:57.313 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2023-10-06 02:09:57.317 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[vebtech.Models.Role, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:09:57.321 +03:00  INF  Executed action vebtech.Controllers.UserController.CreateRole (vebtech) in 56.6879ms
+2023-10-06 02:09:57.323 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:09:57.325 +03:00  ERR  An unhandled exception has occurred while executing the request.Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'vebtech.Models.Role'. Path 'role.User.Roles'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-10-06 02:09:57.349 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8 - 500 - text/plain;+charset=utf-8 95.7901ms
+2023-10-06 02:10:20.916 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 02:10:21.440 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 02:10:21.443 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 02:10:21.450 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 02:10:21.452 +03:00  INF  Hosting environment: Development
+2023-10-06 02:10:21.454 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 02:10:22.469 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:10:23.229 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:10:23.268 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 809.1889ms
+2023-10-06 02:10:23.269 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 38.0032ms
+2023-10-06 02:10:23.301 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:10:23.327 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.9938ms
+2023-10-06 02:10:23.460 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:10:23.640 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.0539ms
+2023-10-06 02:10:31.661 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8
+2023-10-06 02:10:32.141 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:10:32.209 +03:00  INF  Route matched with {action = "CreateRole", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateRole(Int32, System.String) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:10:34.572 +03:00  INF  Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:10:34.657 +03:00  INF  Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:10:40.488 +03:00  INF  Executed DbCommand (72ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 02:10:44.066 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2023-10-06 02:10:51.213 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[vebtech.Models.Role, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:10:54.771 +03:00  INF  Executed action vebtech.Controllers.UserController.CreateRole (vebtech) in 22545.8032ms
+2023-10-06 02:10:54.785 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:10:54.814 +03:00  ERR  An unhandled exception has occurred while executing the request.Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'vebtech.Models.Role'. Path 'role.User.Roles'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2023-10-06 02:10:54.994 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8 - 500 - text/plain;+charset=utf-8 23333.6947ms
+2023-10-06 02:12:58.772 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 02:12:58.973 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 02:12:58.975 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 02:12:58.981 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 02:12:58.983 +03:00  INF  Hosting environment: Development
+2023-10-06 02:12:58.984 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 02:12:59.381 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 02:12:59.764 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 385.6393ms
+2023-10-06 02:12:59.784 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 02:12:59.788 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 4.0077ms
+2023-10-06 02:12:59.866 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 02:12:59.878 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.3539ms
+2023-10-06 02:13:00.024 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 02:13:00.148 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.1673ms
+2023-10-06 02:13:07.742 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0
+2023-10-06 02:13:07.788 +03:00  INF  Executing endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:13:07.827 +03:00  INF  Route matched with {action = "Signin", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Signin(System.String, System.String) on controller vebtech.Controllers.AuthController (vebtech).
+2023-10-06 02:13:09.303 +03:00  INF  Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:13:09.352 +03:00  INF  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:13:09.831 +03:00  INF  Executed DbCommand (48ms) [Parameters=[@__email_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[Email], [a].[Password]
+FROM [Admins] AS [a]
+WHERE [a].[Email] = @__email_0 AND [a].[Password] = @__password_1
+2023-10-06 02:13:10.003 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-10-06 02:13:10.117 +03:00  INF  Executed action vebtech.Controllers.AuthController.Signin (vebtech) in 2278.5256ms
+2023-10-06 02:13:10.119 +03:00  INF  Executed endpoint 'vebtech.Controllers.AuthController.Signin (vebtech)'
+2023-10-06 02:13:10.129 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/sigin?email=test&password=test - 0 - 200 318 application/json;+charset=utf-8 2387.6084ms
+2023-10-06 02:13:23.131 +03:00  INF  Request starting HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8
+2023-10-06 02:13:23.214 +03:00  INF  Executing endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:13:23.218 +03:00  INF  Route matched with {action = "CreateRole", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateRole(Int32, System.String) on controller vebtech.Controllers.UserController (vebtech).
+2023-10-06 02:13:23.229 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:13:23.236 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:13:23.287 +03:00  INF  Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Age], [u].[Email], [u].[Name]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2023-10-06 02:13:23.490 +03:00  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2023-10-06 02:13:23.526 +03:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[vebtech.Models.Role, vebtech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-06 02:13:23.547 +03:00  INF  Executed action vebtech.Controllers.UserController.CreateRole (vebtech) in 323.0293ms
+2023-10-06 02:13:23.549 +03:00  INF  Executed endpoint 'vebtech.Controllers.UserController.CreateRole (vebtech)'
+2023-10-06 02:13:23.553 +03:00  INF  Request finished HTTP/2 POST https://localhost:7084/user/1/role application/json-patch+json 8 - 200 113 application/json;+charset=utf-8 422.2455ms
+2023-10-06 02:14:54.910 +03:00  INF  Executed DbCommand (419ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [vebtechdb];
+2023-10-06 02:14:55.224 +03:00  INF  Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [vebtechdb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2023-10-06 02:14:55.249 +03:00  INF  Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:14:55.435 +03:00  INF  Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admins] (
+    [Id] int NOT NULL IDENTITY,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Admins] PRIMARY KEY ([Id])
+);
+2023-10-06 02:14:55.438 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2023-10-06 02:14:55.440 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Roles] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [UserId] int NOT NULL,
+    CONSTRAINT [PK_Roles] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Roles_Users_UserId] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
+);
+2023-10-06 02:14:55.471 +03:00  INF  Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Password') AND [object_id] = OBJECT_ID(N'[Admins]'))
+    SET IDENTITY_INSERT [Admins] ON;
+INSERT INTO [Admins] ([Id], [Email], [Password])
+VALUES (1, N'admin', N'admin');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Email', N'Password') AND [object_id] = OBJECT_ID(N'[Admins]'))
+    SET IDENTITY_INSERT [Admins] OFF;
+2023-10-06 02:14:55.472 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Roles_UserId] ON [Roles] ([UserId]);
+2023-10-06 02:15:02.580 +03:00  INF  Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:15:02.687 +03:00  INF  Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0
+2023-10-06 02:15:02.706 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:15:02.714 +03:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-06 02:15:02.715 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:15:02.847 +03:00  INF  Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2023-10-06 02:15:02.850 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-10-06 02:15:02.851 +03:00  INF  Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-10-06 02:15:02.855 +03:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-10-06 02:15:02.878 +03:00  INF  Applying migration '20231005231455_InitDatabase'.
+2023-10-06 02:15:02.954 +03:00  ERR  Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Admins] (
+    [Id] int NOT NULL IDENTITY,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Admins] PRIMARY KEY ([Id])
+);
