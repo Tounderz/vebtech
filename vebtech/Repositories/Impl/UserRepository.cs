@@ -6,7 +6,6 @@ using System.Linq.Dynamic.Core;
 using vebtech.Utils;
 using vebtech.CustomException;
 using System.Net;
-using vebtech.ConstParameters;
 using vebtech.Enum;
 
 namespace vebtech.Repositories.Impl

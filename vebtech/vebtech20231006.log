@@ -2103,3 +2103,17 @@ ORDER BY [u].[Id]
 2023-10-06 20:45:31.489 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.6160ms
 2023-10-06 20:45:31.573 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
 2023-10-06 20:45:31.579 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.3126ms
+2023-10-06 20:49:34.750 +03:00  INF  User profile is available. Using 'C:\Users\basta\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-06 20:49:34.860 +03:00  INF  Now listening on: https://localhost:7084
+2023-10-06 20:49:34.862 +03:00  INF  Now listening on: http://localhost:5098
+2023-10-06 20:49:34.865 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-10-06 20:49:34.866 +03:00  INF  Hosting environment: Development
+2023-10-06 20:49:34.867 +03:00  INF  Content root path: C:\Users\basta\source\repos\vebtech\vebtech\
+2023-10-06 20:49:35.162 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/index.html - -
+2023-10-06 20:49:35.397 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/index.html - - - 200 - text/html;charset=utf-8 237.9306ms
+2023-10-06 20:49:35.407 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - -
+2023-10-06 20:49:35.410 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_framework/aspnetcore-browser-refresh.js - - - 200 12346 application/javascript;+charset=utf-8 2.4485ms
+2023-10-06 20:49:35.432 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/_vs/browserLink - -
+2023-10-06 20:49:35.453 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.4043ms
+2023-10-06 20:49:35.552 +03:00  INF  Request starting HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - -
+2023-10-06 20:49:35.655 +03:00  INF  Request finished HTTP/2 GET https://localhost:7084/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 102.7145ms

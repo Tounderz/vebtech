@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vebtech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda4fb9e0988d1422be89f3cdcec56e6b7f7a190")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32c206145dc29f5b8640dc50b15b22d7ce6c1285")]
 [assembly: System.Reflection.AssemblyProductAttribute("vebtech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vebtech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
