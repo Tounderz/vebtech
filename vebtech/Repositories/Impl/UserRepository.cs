@@ -7,6 +7,7 @@ using vebtech.Utils;
 using vebtech.CustomException;
 using System.Net;
 using vebtech.ConstParameters;
+using vebtech.Enum;
 
 namespace vebtech.Repositories.Impl
 {
@@ -62,10 +63,10 @@ namespace vebtech.Repositories.Impl
                 users =  Filter(users, filterParameters);
             }
 
-            if (!string.IsNullOrEmpty(sortParameters.OrderBy) && !string.IsNullOrEmpty(sortParameters.OrderAsc))
+            if (!string.IsNullOrEmpty(sortParameters.OrderBy))
             {
-                if (sortParameters.OrderAsc.ToLower() != SortingDirection.ASCENDING 
-                    && sortParameters.OrderAsc.ToLower() != SortingDirection.DESCENDING )
+                if (sortParameters.OrderAsc != Enum.SortDirection.Ascending 
+                    && sortParameters.OrderAsc != Enum.SortDirection.Descending )
                 {
                     throw new HttpResponseException(HttpStatusCode.BadRequest, "Not valid sort order");
                 }
@@ -117,19 +118,19 @@ namespace vebtech.Repositories.Impl
             switch (sortParameters.OrderBy.ToLower())
             {
                 case "id":
-                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                    return sortParameters.OrderAsc == SortDirection.Ascending
                         ? users.OrderBy(i => i.Id)
                         : users.OrderByDescending(i => i.Id);
                 case "name":
-                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                    return sortParameters.OrderAsc == SortDirection.Ascending
                         ? users.OrderBy(i => i.Name)
                         : users.OrderByDescending(i => i.Name);
                 case "age":
-                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                    return sortParameters.OrderAsc == SortDirection.Ascending
                         ? users.OrderBy(i => i.Age)
                         : users.OrderByDescending(i => i.Age);
                 case "email":
-                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                    return sortParameters.OrderAsc == SortDirection.Ascending
                         ? users.OrderBy(i => i.Email)
                         : users.OrderByDescending(i => i.Email);
                 default:

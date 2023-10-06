@@ -51,6 +51,7 @@ builder.Services.AddSwaggerGen(option =>
             new string[]{}
         }
     });
+    option.EnableAnnotations();
 });
 
 var logger = new LoggerConfiguration()
