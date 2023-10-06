@@ -5,7 +5,8 @@ namespace vebtech.Repositories
 {
     public interface IUserRepository
     {
-        IEnumerable<User> Get(PaginationParameters paginationParameters, SortParameters sortParameters);
+        IEnumerable<User> Get(PaginationParameters paginationParameters, 
+            SortParameters sortParameters, FilterParameters filterParameters);
         User Create(UserDTO user);
         User GetUser(int id);
         void Delete (int id);

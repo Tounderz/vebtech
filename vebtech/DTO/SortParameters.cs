@@ -3,6 +3,6 @@
     public class SortParameters
     {
         public string OrderBy { get; set; } = String.Empty;
-        public bool OrderAsc { get; set; } = true;
+        public string OrderAsc { get; set; } = string.Empty;
     }
 }

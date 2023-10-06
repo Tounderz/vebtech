@@ -6,6 +6,7 @@ using System.Linq.Dynamic.Core;
 using vebtech.Utils;
 using vebtech.CustomException;
 using System.Net;
+using vebtech.ConstParameters;
 
 namespace vebtech.Repositories.Impl
 {
@@ -25,6 +26,7 @@ namespace vebtech.Repositories.Impl
                 Age = (int)userDTO.Age,
                 Email = userDTO.Email
             };
+
             _context.Users.Add(user);
             _context.SaveChanges();
             return user;
@@ -32,8 +34,8 @@ namespace vebtech.Repositories.Impl
 
         public Role CreateRole(int userId, string name)
         {
-            User user = GetUser(userId);
-            Role role = new Role()
+            var user = GetUser(userId);
+            var role = new Role()
             {
                 Name = name,
                 User = user,
@@ -50,14 +52,25 @@ namespace vebtech.Repositories.Impl
             _context.SaveChanges();
         }
 
-        public IEnumerable<User> Get(PaginationParameters paginationParameters, SortParameters sortParameters)
+        public IEnumerable<User> Get(PaginationParameters paginationParameters, 
+            SortParameters sortParameters, FilterParameters filterParameters)
         {
-            var users = _context.Users.AsQueryable();
+            IEnumerable<User> users = _context.Users.Include(user => user.Roles).AsQueryable();
 
-            if (!string.IsNullOrEmpty(sortParameters.OrderBy))
+            if (filterParameters != null)
             {
-                string orderFlow = sortParameters.OrderAsc ? "ascending" : "descending";
-                users = users.OrderBy($"{sortParameters.OrderBy} {orderFlow}");
+                users =  Filter(users, filterParameters);
+            }
+
+            if (!string.IsNullOrEmpty(sortParameters.OrderBy) && !string.IsNullOrEmpty(sortParameters.OrderAsc))
+            {
+                if (sortParameters.OrderAsc.ToLower() != SortingDirection.ASCENDING 
+                    && sortParameters.OrderAsc.ToLower() != SortingDirection.DESCENDING )
+                {
+                    throw new HttpResponseException(HttpStatusCode.BadRequest, "Not valid sort order");
+                }
+
+                users = Sort(users, sortParameters);
             }
 
             return users
@@ -97,6 +110,64 @@ namespace vebtech.Repositories.Impl
             _context.Entry(oldUser).State = EntityState.Modified;
             _context.SaveChanges();
             return oldUser;
+        }
+
+        private IEnumerable<User> Sort(IEnumerable<User> users, SortParameters sortParameters)
+        {
+            switch (sortParameters.OrderBy.ToLower())
+            {
+                case "id":
+                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                        ? users.OrderBy(i => i.Id)
+                        : users.OrderByDescending(i => i.Id);
+                case "name":
+                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                        ? users.OrderBy(i => i.Name)
+                        : users.OrderByDescending(i => i.Name);
+                case "age":
+                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                        ? users.OrderBy(i => i.Age)
+                        : users.OrderByDescending(i => i.Age);
+                case "email":
+                    return sortParameters.OrderAsc.Equals(SortingDirection.ASCENDING, StringComparison.OrdinalIgnoreCase)
+                        ? users.OrderBy(i => i.Email)
+                        : users.OrderByDescending(i => i.Email);
+                default:
+                    throw new HttpResponseException(HttpStatusCode.BadRequest, "Not valid sort field");
+            }
+        }
+
+        private IEnumerable<User> Filter(IEnumerable<User> users, FilterParameters filterParameters)
+        {
+            if (filterParameters.SearchQuery != null)
+            {
+                users = users.Where(user => user.Name.Contains(filterParameters.SearchQuery)
+                || user.Email.Contains(filterParameters.SearchQuery) 
+                || user.Age.ToString().Contains(filterParameters.SearchQuery)
+                || (user.Roles != null && user.Roles.Any(role => role.Name.Contains(filterParameters.SearchQuery))));
+            }
+
+            if (filterParameters.Name != null)
+            {
+                users = users.Where(user => user.Name.Contains(filterParameters.Name));
+            }
+
+            if (filterParameters.Age != null)
+            {
+                users = users.Where(user => user.Age == filterParameters.Age);
+            }
+
+            if (filterParameters.Email != null)
+            {
+                users = users.Where(user => user.Email.Contains(filterParameters.Email));
+            }
+
+            if (filterParameters.RoleName != null)
+            {
+                users = users.Where(user => user.Roles.Any(role => role.Name.Contains(filterParameters.RoleName)));
+            }
+
+            return users;
         }
     }
 }

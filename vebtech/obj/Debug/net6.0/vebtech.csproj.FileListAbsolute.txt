@@ -101,3 +101,4 @@ C:\Users\basta\source\repos\vebtech\vebtech\bin\Debug\net6.0\Serilog.Sinks.Conso
 C:\Users\basta\source\repos\vebtech\vebtech\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\basta\source\repos\vebtech\vebtech\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\basta\source\repos\vebtech\vebtech\bin\Debug\net6.0\seri-log.config.json
+C:\Users\basta\source\repos\vebtech\vebtech\obj\Debug\net6.0\vebtech.sourcelink.json

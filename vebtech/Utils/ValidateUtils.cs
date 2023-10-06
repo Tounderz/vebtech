@@ -29,7 +29,7 @@ namespace vebtech.Utils
 
         private static void ValidateAge(int? age)
         {
-            if (age != null && !ValidateUtils.IsAgePositive((int)age))
+            if (age != null && !IsAgePositive((int)age))
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest, "Age is must be positive");
             }

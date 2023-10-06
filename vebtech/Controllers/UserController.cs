@@ -27,20 +27,13 @@ namespace vebtech.Controllers
         }
 
         [HttpGet(Name = "Get Users")]
-        public IActionResult Get([FromQuery] PaginationParameters paginationParameters, [FromQuery] SortParameters sortParameters)
+        public IActionResult Get(
+            [FromQuery] PaginationParameters paginationParameters,
+            [FromQuery] SortParameters sortParameters, 
+            [FromQuery] FilterParameters filterParameters)
         {
-            if (!string.IsNullOrEmpty(sortParameters.OrderBy))
-            {
-                Type type = typeof(User);
-                var field = type.GetProperty(sortParameters.OrderBy[0].ToString().ToUpper() + sortParameters.OrderBy.Substring(1).ToLower());
 
-                if (field == null)
-                {
-                    throw new HttpResponseException(HttpStatusCode.BadRequest, "Not valid sort field");
-                }
-            }
-
-            return Ok(_repository.Get(paginationParameters, sortParameters));
+            return Ok(_repository.Get(paginationParameters, sortParameters, filterParameters));
         }
 
         [HttpPost(Name = "Create User")]
