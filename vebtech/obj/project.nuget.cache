@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Oy8w4+bHdaNwR7EiVlNAkbCyx8OeyoamcgsjzgEEy8P4uQnf44SFsyuNeRpG8CA7aDI8cMXSKAeCJOJMzHaDOA==",
+  "dgSpecHash": "wt8/73TFkEbhYBdFIRFXcGzzi72b0kO0OCXp7lHsjwTb5H4VS0jRPpQq7Hz++q6rSWO9UNV1w+7YxIzaa13BQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\basta\\source\\repos\\vebtech\\vebtech\\vebtech.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\basta\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\basta\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\basta\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\basta\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\basta\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\basta\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.22\\microsoft.aspnetcore.authentication.jwtbearer.6.0.22.nupkg.sha512",
     "C:\\Users\\basta\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.22\\microsoft.aspnetcore.jsonpatch.6.0.22.nupkg.sha512",

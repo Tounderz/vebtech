@@ -1,29 +1,34 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Serilog;
-using vebtech.Auth;
+using System.Text;
 using vebtech.Context;
 using vebtech.Filter;
-using vebtech.Repositories;
-using vebtech.Repositories.Impl;
+using vebtech.Models;
+using vebtech.Models.Configurations;
+using vebtech.Models.DTO;
+using vebtech.Repositories.Abstract;
+using vebtech.Repositories.Implementation;
+using vebtech.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers(options =>
-{
-    options.Filters.Add<HttpResponseExceptionFilter>();
-}).AddNewtonsoftJson(options =>
-{
-    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-});
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+    {
+        options.Filters.Add<HttpResponseExceptionFilter>();
+    }).AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+    });
+
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(option =>
 {
@@ -48,11 +53,44 @@ builder.Services.AddSwaggerGen(option =>
                     Id="Bearer"
                 }
             },
-            new string[]{}
+
+            Array.Empty<string>()
         }
     });
     option.EnableAnnotations();
 });
+
+var jwtConfig = builder.Configuration
+    .GetSection("Jwt")
+    .Get<JwtConfig>();
+builder.Services.AddSingleton(jwtConfig);
+
+var mapperConfig = new MapperConfiguration(cfg =>
+    {
+        cfg.CreateMap<UserDto, User>()
+            .ForMember(user => user.Age, opt => opt.MapFrom((dto, user) => dto.Age != null ? dto.Age : user.Age))
+            .ForAllMembers(options => options.Condition((dto, user, srcMember) => srcMember != null));
+        cfg.CreateMap<AdminDto, Admin>()
+        .ForMember(admin => admin.Password, opt => opt.MapFrom(dto => BCrypt.Net.BCrypt.HashPassword(dto.Password)));
+    });
+var mapper = new Mapper(mapperConfig);
+builder.Services.AddSingleton(mapper);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidateAudience = true,
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            ValidateLifetime = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"])),
+            ValidateIssuerSigningKey = true,
+        };
+    });
 
 var logger = new LoggerConfiguration()
     .ReadFrom.Configuration(new ConfigurationBuilder()
@@ -63,30 +101,12 @@ var logger = new LoggerConfiguration()
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
-string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.RequireHttpsMetadata = false;
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidIssuer = AuthOptions.ISSUER,
-            ValidateAudience = true,
-            ValidAudience = AuthOptions.AUDIENCE,
-            ValidateLifetime = true,
-            IssuerSigningKey = AuthOptions.GetSymmetricSecurityKey(),
-            ValidateIssuerSigningKey = true,
-        };
-    });
-
+builder.Services.AddScoped<IValidateUtils, ValidateUtils>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

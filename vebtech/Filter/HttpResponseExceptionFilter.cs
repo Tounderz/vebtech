@@ -1,27 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System.Net;
 using vebtech.CustomException;
 
-namespace vebtech.Filter
+namespace vebtech.Filter;
+
+public class HttpResponseExceptionFilter : IActionFilter, IOrderedFilter
 {
-    public class HttpResponseExceptionFilter : IActionFilter, IOrderedFilter
+    public int Order => int.MaxValue - 10;
+
+    public void OnActionExecuting(ActionExecutingContext context) { }
+
+    public void OnActionExecuted(ActionExecutedContext context)
     {
-        public int Order => int.MaxValue - 10;
-
-        public void OnActionExecuting(ActionExecutingContext context) { }
-
-        public void OnActionExecuted(ActionExecutedContext context)
+        if (context.Exception is HttpResponseException httpResponseException)
         {
-            if (context.Exception is HttpResponseException httpResponseException)
+            context.Result = new ObjectResult(httpResponseException.Value)
             {
-                context.Result = new ObjectResult(httpResponseException.Value)
-                {
-                    StatusCode = (int?)httpResponseException.StatusCode
-                };
+                StatusCode = (int?)httpResponseException.StatusCode
+            };
 
-                context.ExceptionHandled = true;
-            }
+            context.ExceptionHandled = true;
         }
     }
 }

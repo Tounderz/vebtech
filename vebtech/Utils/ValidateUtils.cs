@@ -1,50 +1,61 @@
 ﻿using System.Net;
 using vebtech.CustomException;
-using vebtech.DTO;
-using vebtech.Models;
-using vebtech.Repositories;
-using vebtech.Repositories.Impl;
+using vebtech.Models.DTO;
+using vebtech.Repositories.Abstract;
 
-namespace vebtech.Utils
+namespace vebtech.Utils;
+
+public class ValidateUtils : IValidateUtils
 {
-    public class ValidateUtils
+    private readonly IUserRepository _userRepository;
+
+    public ValidateUtils(IUserRepository userRepository)
     {
-        private static bool IsAnyFieldsNull (UserDTO user)
+        _userRepository = userRepository;
+    }
+
+    public async Task ValidateCreate(UserDto userDto)
+    {
+        if (userDto.Email == null || userDto.Age == null || userDto.Name == null)
         {
-            return user.Email == null || user.Age == null || user.Name == null;
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "All fields required");
         }
 
-        private static bool IsAgePositive (int age)
+        ValidateEmail(userDto.Email);
+        ValidateAge(userDto.Age);
+    }
+
+    public async Task ValidateUpdate(UserDto userDto)
+    {
+        if (userDto.Email == null && userDto.Age == null && userDto.Name == null)
         {
-            return age > 0;
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "At least one field required");
         }
 
-        private static void ValidateEmail(IUserRepository _repository, string? email)
+        if (userDto.Age != null)
         {
-            if (!string.IsNullOrEmpty(email) && _repository.IsEmailExist(email))
-            {
-                throw new HttpResponseException(HttpStatusCode.BadRequest, "User with this email is exist");
-            }
+            ValidateAge(userDto.Age);
         }
 
-        private static void ValidateAge(int? age)
+        if (!string.IsNullOrEmpty(userDto.Email))
         {
-            if (age != null && !IsAgePositive((int)age))
-            {
-                throw new HttpResponseException(HttpStatusCode.BadRequest, "Age is must be positive");
-            }
+            await ValidateEmail(userDto.Email);
         }
+    }
 
-        public static void ValidateCondition(IUserRepository repository, UserDTO user)
+    private async Task ValidateEmail(string? email)
+    {
+        if (!string.IsNullOrEmpty(email) && await _userRepository.IsEmailExist(email))
         {
-            ValidateAge(user.Age);
-            ValidateEmail(repository, user.Email);
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "User with this email is exist");
         }
+    }
 
-        public static void ValidateCreate(IUserRepository repository, UserDTO user)
+    private void ValidateAge(int? age)
+    {
+        if (age <= 0)
         {
-            IsAnyFieldsNull(user);
-            ValidateCondition(repository, user);
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "Age is must be positive");
         }
     }
 }

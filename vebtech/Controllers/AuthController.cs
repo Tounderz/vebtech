@@ -1,88 +1,66 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System;
-using vebtech.Auth;
-using vebtech.Repositories;
-using vebtech.Models;
-using vebtech.CustomException;
 using System.Net;
+using vebtech.CustomException;
+using vebtech.Models.DTO;
+using vebtech.Repositories.Abstract;
 
-namespace vebtech.Controllers
+namespace vebtech.Controllers;
+
+[ApiController]
+[Route("[controller]")]
+public class AuthController : ControllerBase
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class AuthController: ControllerBase
+    private readonly IAuthRepository _authRepository;
+    private readonly ILogger<UsersController> _logger;
+
+    public AuthController(IAuthRepository authRepository, ILogger<UsersController> logger)
     {
-        private readonly IAuthRepository _repository;
+        _authRepository = authRepository;
+        _logger = logger;
+    }
 
-        public AuthController(IAuthRepository repository)
+    [HttpPost("/signIn")]
+    public async Task<IActionResult> SignIn([FromForm] AdminDto adminDto)
+    {
+        try
         {
-            _repository = repository;
-        }
-
-        [HttpPost("/sigin")]
-        public IActionResult Signin(string email, string password)
-        {
-            var identity = GetIdentity(email, password);
-            if (identity == null)
-            {
+            var encodedJwt = await _authRepository.GenerateJwt(adminDto) ??
                 throw new HttpResponseException(HttpStatusCode.BadRequest, "Invalid email or password");
-            }
-
-            var now = DateTime.UtcNow;
-
-            var jwt = new JwtSecurityToken(
-                    issuer: AuthOptions.ISSUER,
-                    audience: AuthOptions.AUDIENCE,
-                    notBefore: now,
-                    claims: identity.Claims,
-                    expires: now.Add(TimeSpan.FromMinutes(AuthOptions.LIFETIME)),
-                    signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256));
-            var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
 
             var response = new
             {
                 access_token = encodedJwt,
-                username = identity.Name
+                username = adminDto.Email
             };
+
             return Ok(response);
         }
-
-        [HttpPost("/singup")]
-        public IActionResult Signup(string email, string password)
+        catch (HttpResponseException ex)
         {
-            if (_repository.IsExistEmail(email))
+            _logger.Log(LogLevel.Error, ex, $"SignIn method error: {(int)ex.StatusCode}");
+            return BadRequest(new { message = $"{ex.Value}. StatusCode: ${(int)ex.StatusCode}" });
+        }
+    }
+
+    [HttpPost("/signUp")]
+    public async Task<IActionResult> SignUp([FromForm] AdminDto adminDto)
+    {
+        try
+        {
+            if (await _authRepository.IsExistEmail(adminDto.Email))
             {
                 throw new HttpResponseException(HttpStatusCode.Conflict, "Admin with this email exist");
             }
 
-            Admin admin = _repository.Signup(email, password);
-            if (admin == null)
-            {
-                throw new HttpResponseException(HttpStatusCode.BadRequest, "Invalid email or password");
-            }
-
-            return Signup(email, password);
+            var admin = await _authRepository.SignUp(adminDto);
+            return admin == null
+                ? throw new HttpResponseException(HttpStatusCode.BadRequest, "Invalid email or password")
+                : await SignUp(adminDto);
         }
-
-        private ClaimsIdentity GetIdentity(string email, string password)
+        catch (HttpResponseException ex)
         {
-            Admin admin = _repository.Signin(email, password);
-            if (admin == null)
-            {
-                return null;
-            }
-
-            var claims = new List<Claim>
-            {
-                new Claim(ClaimsIdentity.DefaultNameClaimType, admin.Email),
-            };
-            ClaimsIdentity claimsIdentity =
-            new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,
-                ClaimsIdentity.DefaultRoleClaimType);
-            return claimsIdentity;
+            _logger.Log(LogLevel.Error, ex, $"SignUp method error: {(int)ex.StatusCode}");
+            return BadRequest(new { message = $"{ex.Value}. StatusCode: ${(int)ex.StatusCode}" });
         }
     }
 }
