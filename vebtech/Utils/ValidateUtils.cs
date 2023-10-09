@@ -21,7 +21,7 @@ public class ValidateUtils : IValidateUtils
             throw new HttpResponseException(HttpStatusCode.BadRequest, "All fields required");
         }
 
-        ValidateEmail(userDto.Email);
+        await ValidateEmail(userDto.Email);
         ValidateAge(userDto.Age);
     }
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using vebtech.CustomException;
+using vebtech.Models;
 using vebtech.Models.DTO;
 using vebtech.Repositories.Abstract;
 
@@ -19,6 +20,9 @@ public class AuthController : ControllerBase
         _logger = logger;
     }
 
+    [ProducesResponseType(typeof(Admin), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
     [HttpPost("/signIn")]
     public async Task<IActionResult> SignIn([FromForm] AdminDto adminDto)
     {
@@ -42,6 +46,8 @@ public class AuthController : ControllerBase
         }
     }
 
+    [ProducesResponseType(typeof(Admin), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [HttpPost("/signUp")]
     public async Task<IActionResult> SignUp([FromForm] AdminDto adminDto)
     {
@@ -53,9 +59,7 @@ public class AuthController : ControllerBase
             }
 
             var admin = await _authRepository.SignUp(adminDto);
-            return admin == null
-                ? throw new HttpResponseException(HttpStatusCode.BadRequest, "Invalid email or password")
-                : await SignUp(adminDto);
+            return Ok(new { message = "successfully" });
         }
         catch (HttpResponseException ex)
         {

@@ -38,11 +38,11 @@ public class AuthRepository : IAuthRepository
 
     public async Task<Admin> SignUp(AdminDto adminDto)
     {
-        var auth = _mapper.Map<Admin>(adminDto);
+        var admin = _mapper.Map<Admin>(adminDto);
 
-        await _context.Admins.AddAsync(auth);
+        await _context.Admins.AddAsync(admin);
         await _context.SaveChangesAsync();
-        return auth;
+        return admin;
     }
 
     public async Task<bool> IsExistEmail(string email)
