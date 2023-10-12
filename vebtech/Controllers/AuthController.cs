@@ -17,7 +17,7 @@ public class AuthController : ControllerBase
     private readonly ILogger<AuthController> _logger;
 
     public AuthController(IAuthService authService,
-        ILogger<UsersController> logger,
+        ILogger<AuthController> logger,
         IJwtService jwtService,
         IValidateUtils validateUtils)
     {
