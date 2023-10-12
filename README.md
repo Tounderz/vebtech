@@ -1,29 +1,29 @@
-<h1 align="center">Тестовый проект для компании Vebtech</h1>
-<h3 align="center">В проекте реализованы следующие функции</h3>
+<h1 align="center">Test project for Vebtech company</h1>
+<h3 align="center">The project implements the following features:</h3>
 <ol>
-    <li>Получение всех пользователей</li>
-    <li>Получение одного пользователя по id</li>
-    <li>Добавление пользователя</li>
-    <li>Обновление пользователя (полное и частичтное)</li>
-    <li>Удаление пользователя по id</li>
-    <li>Добавление пользователю новой роли</li>
-    <li>Авторизация</li>
-    <li>Регистрация</li>
-    <li>Логирование с помощью Serilog</li>
+    <li>Get all users</li>
+    <li>Get a single user by id</li>
+    <li>Add a user</li>
+    <li>Update a user (full and partial)</li>
+    <li>Delete a user by id</li>
+    <li>Add a new role to a user</li>
+    <li>Authorization</li>
+    <li>Registration</li>
+    <li>Logging using Serilog</li>
 </ol>
-<h3>Шаги запуска приложения</h3>
+<h3>Application startup steps:</h3>
 <ol>
     <li>
         <h3>
-            Для первоначального использования приложение предусмотрен администратор с кредами admin/admin.
+            For initial use, the application provides an administrator with credentials admin/admin.
         </h3>
     </li>
     <li>
         <h3>
-            Для полного запуска приложение вам понадобится открыть консоль управления пакетами. Ввести команду Update-Databse.
+            To fully run the application, you will need to open the package management console. Enter the command Update-Database.
         </h3>
     </li>
 </ol>
 <h3>
-    После запуска приложения вам будет доступен Swagger, для тестирования приложения.
+    After starting the application, Swagger will be available for testing the application.
 </h3>
