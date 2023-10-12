@@ -9,5 +9,5 @@ public class HttpResponseException : Exception
 
     public HttpStatusCode StatusCode { get; }
 
-    public object? Value { get; }
+    public object? Value { get; set; }
 }

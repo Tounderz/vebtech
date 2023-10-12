@@ -6,14 +6,17 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
 using Serilog;
 using System.Text;
-using vebtech.Context;
+using vebtech.Application.Services;
+using vebtech.Application.Services.Interfaces;
+using vebtech.Domain.Models;
+using vebtech.Domain.Models.Configurations;
+using vebtech.Domain.Models.DTO;
 using vebtech.Filter;
-using vebtech.Models;
-using vebtech.Models.Configurations;
-using vebtech.Models.DTO;
-using vebtech.Repositories.Abstract;
-using vebtech.Repositories.Implementation;
+using vebtech.Infrastructure.Context;
+using vebtech.Infrastructure.Repositories;
+using vebtech.Infrastructure.Repositories.Abstract;
 using vebtech.Utils;
+using vebtech.Utils.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,13 +68,28 @@ var jwtConfig = builder.Configuration
     .Get<JwtConfig>();
 builder.Services.AddSingleton(jwtConfig);
 
+var adminConfig = builder.Configuration
+    .GetSection("AdminUser")
+    .Get<AdminConfig>();
+builder.Services.AddSingleton(adminConfig);
+
 var mapperConfig = new MapperConfiguration(cfg =>
     {
         cfg.CreateMap<UserDto, User>()
-            .ForMember(user => user.Age, opt => opt.MapFrom((dto, user) => dto.Age != null ? dto.Age : user.Age))
+            .ForMember(user => user.Age, opt => 
+                opt.MapFrom((dto, user) => 
+                !string.IsNullOrEmpty(dto.Age) && int.TryParse(dto.Age, out int age) ? age : user.Age))
             .ForAllMembers(options => options.Condition((dto, user, srcMember) => srcMember != null));
+
         cfg.CreateMap<AdminDto, Admin>()
-        .ForMember(admin => admin.Password, opt => opt.MapFrom(dto => BCrypt.Net.BCrypt.HashPassword(dto.Password)));
+            .ForMember(admin => 
+                admin.Password, opt => 
+                opt.MapFrom(dto => BCrypt.Net.BCrypt.HashPassword(dto.Password)));
+
+        cfg.CreateMap<RoleDto, Role>()
+        .ForMember(role => role.UserId, opt => 
+            opt.MapFrom((dto, role) => 
+            !string.IsNullOrEmpty(dto.UserId) && int.TryParse(dto.UserId, out int userId) ? userId : role.UserId));
     });
 var mapper = new Mapper(mapperConfig);
 builder.Services.AddSingleton(mapper);
@@ -101,9 +119,12 @@ var logger = new LoggerConfiguration()
 builder.Logging.ClearProviders();
 builder.Logging.AddSerilog(logger);
 
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IValidateUtils, ValidateUtils>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
-builder.Services.AddScoped<IValidateUtils, ValidateUtils>();
 
 var app = builder.Build();
 

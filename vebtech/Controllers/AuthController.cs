@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using vebtech.CustomException;
-using vebtech.Models;
-using vebtech.Models.DTO;
-using vebtech.Repositories.Abstract;
+using vebtech.Application.Services.Interfaces;
+using vebtech.Domain.Models.DTO;
+using vebtech.Utils.Interfaces;
 
 namespace vebtech.Controllers;
 
@@ -11,60 +11,82 @@ namespace vebtech.Controllers;
 [Route("[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly IAuthRepository _authRepository;
+    private readonly IAuthService _authService;
+    private readonly IValidateUtils _validateUtils;
+    private readonly IJwtService _jwtService;
     private readonly ILogger<UsersController> _logger;
 
-    public AuthController(IAuthRepository authRepository, ILogger<UsersController> logger)
+    public AuthController(IAuthService authService,
+        ILogger<UsersController> logger,
+        IJwtService jwtService,
+        IValidateUtils validateUtils)
     {
-        _authRepository = authRepository;
+        _authService = authService;
         _logger = logger;
+        _jwtService = jwtService;
+        _validateUtils = validateUtils;
     }
 
-    [ProducesResponseType(typeof(Admin), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     [HttpPost("/signIn")]
     public async Task<IActionResult> SignIn([FromForm] AdminDto adminDto)
     {
         try
         {
-            var encodedJwt = await _authRepository.GenerateJwt(adminDto) ??
-                throw new HttpResponseException(HttpStatusCode.BadRequest, "Invalid email or password");
-
+           _validateUtils.ValidateAdmin(adminDto);
+            var admin = await _authService.SignIn(adminDto) ?? throw new HttpResponseException(HttpStatusCode.NotFound, "Invalid email or password");
+            var encodedJwt = _jwtService.GenerateJwt(admin.Email);
             var response = new
             {
                 access_token = encodedJwt,
-                username = adminDto.Email
+                username = admin.Email
             };
 
             return Ok(response);
         }
         catch (HttpResponseException ex)
         {
-            _logger.Log(LogLevel.Error, ex, $"SignIn method error: {(int)ex.StatusCode}");
-            return BadRequest(new { message = $"{ex.Value}. StatusCode: ${(int)ex.StatusCode}" });
+            _logger.Log(LogLevel.Error, ex, ex.Message, ex.StatusCode);
+            return BadRequest(new { message = ex.Value });
+        }
+        catch (Exception ex)
+        {
+            _logger.Log(LogLevel.Error, ex, ex.Message, ex.HResult);
+            return BadRequest(new { message = "Error" });
         }
     }
 
-    [ProducesResponseType(typeof(Admin), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     [HttpPost("/signUp")]
     public async Task<IActionResult> SignUp([FromForm] AdminDto adminDto)
     {
         try
         {
-            if (await _authRepository.IsExistEmail(adminDto.Email))
+            _validateUtils.ValidateAdmin(adminDto);
+            if (await _authService.IsExistEmail(adminDto.Email))
             {
                 throw new HttpResponseException(HttpStatusCode.Conflict, "Admin with this email exist");
             }
 
-            var admin = await _authRepository.SignUp(adminDto);
+            var admin = await _authService.SignUp(adminDto);
             return Ok(new { message = "successfully" });
         }
         catch (HttpResponseException ex)
         {
-            _logger.Log(LogLevel.Error, ex, $"SignUp method error: {(int)ex.StatusCode}");
-            return BadRequest(new { message = $"{ex.Value}. StatusCode: ${(int)ex.StatusCode}" });
+            _logger.Log(LogLevel.Error, ex, ex.Message, ex.StatusCode);
+            return BadRequest(new { message = ex.Value });
+        }
+        catch (Exception ex)
+        {
+            _logger.Log(LogLevel.Error, ex, ex.Message, ex.HResult);
+            return BadRequest(new { message = "Error" });
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.AssemblyInfoInputs.cache
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.AssemblyInfo.cs
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.csproj.CoreCompileInputs.cache
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.sourcelink.json
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\bin\Debug\net6.0\vebtech.Domain.deps.json
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\bin\Debug\net6.0\vebtech.Domain.dll
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\bin\Debug\net6.0\vebtech.Domain.pdb
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.csproj.AssemblyReference.cache
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.dll
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\refint\vebtech.Domain.dll
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\vebtech.Domain.pdb
+C:\Users\basta\source\repos\vebtech\vebtech.Domain\obj\Debug\net6.0\ref\vebtech.Domain.dll

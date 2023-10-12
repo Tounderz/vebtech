@@ -1,22 +1,23 @@
 ﻿using System.Net;
+using vebtech.Application.Services.Interfaces;
 using vebtech.CustomException;
-using vebtech.Models.DTO;
-using vebtech.Repositories.Abstract;
+using vebtech.Domain.Models.DTO;
+using vebtech.Utils.Interfaces;
 
 namespace vebtech.Utils;
 
 public class ValidateUtils : IValidateUtils
 {
-    private readonly IUserRepository _userRepository;
+    private readonly IUserService _userService;
 
-    public ValidateUtils(IUserRepository userRepository)
+    public ValidateUtils(IUserService userService)
     {
-        _userRepository = userRepository;
+        _userService = userService;
     }
 
     public async Task ValidateCreate(UserDto userDto)
     {
-        if (userDto.Email == null || userDto.Age == null || userDto.Name == null)
+        if (string.IsNullOrEmpty(userDto.Email) || userDto.Age == null || string.IsNullOrEmpty(userDto.Name))
         {
             throw new HttpResponseException(HttpStatusCode.BadRequest, "All fields required");
         }
@@ -27,7 +28,7 @@ public class ValidateUtils : IValidateUtils
 
     public async Task ValidateUpdate(UserDto userDto)
     {
-        if (userDto.Email == null && userDto.Age == null && userDto.Name == null)
+        if (string.IsNullOrEmpty(userDto.Email) && userDto.Age == null && string.IsNullOrEmpty(userDto.Name))
         {
             throw new HttpResponseException(HttpStatusCode.BadRequest, "At least one field required");
         }
@@ -43,19 +44,40 @@ public class ValidateUtils : IValidateUtils
         }
     }
 
+    public void ValidateCreateRole(RoleDto roleDto)
+    {
+        if (string.IsNullOrEmpty(roleDto.Name) || !string.IsNullOrEmpty(roleDto.UserId))
+        {
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "All fields required");
+        }
+
+        if (!int.TryParse(roleDto.UserId, out int result) || result <= 0)
+        {
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "UserId must be a valid positive number");
+        }
+    }
+
+    public void ValidateAdmin(AdminDto adminDto)
+    {
+        if (adminDto == null || string.IsNullOrEmpty(adminDto.Email) || string.IsNullOrEmpty(adminDto.Password))
+        {
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "All fields required");
+        }
+    }
+
     private async Task ValidateEmail(string? email)
     {
-        if (!string.IsNullOrEmpty(email) && await _userRepository.IsEmailExist(email))
+        if (!string.IsNullOrEmpty(email) && await _userService.IsEmailExist(email))
         {
             throw new HttpResponseException(HttpStatusCode.BadRequest, "User with this email is exist");
         }
     }
 
-    private void ValidateAge(int? age)
+    private void ValidateAge(string age)
     {
-        if (age <= 0)
+        if (!int.TryParse(age, out int result) || result <= 0)
         {
-            throw new HttpResponseException(HttpStatusCode.BadRequest, "Age is must be positive");
+            throw new HttpResponseException(HttpStatusCode.BadRequest, "Age must be a valid positive number");
         }
     }
 }
